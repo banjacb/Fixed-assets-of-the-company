@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addFragments.AddLokacija">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Postanski broj -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/locationAddress"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/editTextId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/locationAddress"
+                android:minHeight="48dp"
+                android:padding="12dp"/>
+
+            <!-- Naziv grada -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/locationName"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp" />
+
+
+
+            <Spinner
+                android:id="@+id/spinnerGrad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:paddingVertical="8dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addLokacija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonSubmit"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        style="@style/ButtonPrimaryStyle"/>
+
+</FrameLayout>

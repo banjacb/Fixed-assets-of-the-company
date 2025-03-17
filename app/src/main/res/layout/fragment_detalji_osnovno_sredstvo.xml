@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelName"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"
+
+        />
+    <EditText
+        android:id="@+id/editTextNaziv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/labelName"
+        android:inputType="text"
+        android:padding="16dp"/>
+
+    <!-- EditText for Opis -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelSubscribe"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"
+
+        />
+    <EditText
+        android:id="@+id/editTextOpis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/labelSubscribe"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:padding="16dp"/>
+
+    <!-- EditText for Barkod -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelBarcode"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"
+
+        />
+    <EditText
+        android:id="@+id/editTextBarkod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/labelBarcode"
+        android:inputType="text"
+        android:padding="16dp"
+
+        />
+
+    <!-- EditText for Cijena -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelPrice"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"
+
+        />
+    <EditText
+        android:id="@+id/editTextCijena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/labelPrice"
+        android:inputType="numberDecimal"
+        android:padding="16dp"/>
+
+    <!-- EditText for Datum -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelDate"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"
+
+        />
+    <EditText
+        android:id="@+id/editTextDatum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/labelDate"
+        android:inputType="date"
+        android:padding="16dp"/>
+
+    <!-- ImageView for the picture -->
+    <ImageView
+        android:id="@+id/imageViewPicture"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <!-- Buttons Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/buttonDeleteOs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/buttonDelete"
+            android:backgroundTint="@color/red"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:minHeight="48dp"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/buttonUpdateOs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/buttonUpdate"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:minHeight="48dp"
+            style="@style/ButtonPrimaryStyle"/>
+    </LinearLayout>
+
+    <!-- Location Button -->
+    <Button
+        android:id="@+id/buttonShowOs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonShowLocation"
+        android:backgroundTint="@color/green"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp"
+        style="@style/ButtonPrimaryStyle"/>
+
+</LinearLayout>
+</ScrollView>

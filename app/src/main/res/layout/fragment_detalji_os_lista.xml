@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/labelName"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"
+
+            />
+        <EditText
+            android:id="@+id/editTextNaziv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/labelName"
+            android:inputType="text"
+            android:padding="16dp"
+            android:enabled="false"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/currentPerson"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"
+            />
+        <EditText
+            android:id="@+id/edit_trenutna_osoba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/currentPerson"
+            android:inputType="text"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/newPerson"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"
+            />
+        <EditText
+            android:id="@+id/edit_sledeca_osoba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/newPerson"
+            android:inputType="text"
+            android:minHeight="48dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/currentLocation"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_trenutna_lokacija"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/currentLocation"
+            android:inputType="text"
+            android:minHeight="48dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/newLocation"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"
+            />
+        <EditText
+            android:id="@+id/edit_sledeca_lokacija"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/newLocation"
+            android:inputType="text"
+            android:minHeight="48dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Delete Button -->
+            <Button
+                android:id="@+id/buttonDeleteOs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/buttonDelete"
+                android:backgroundTint="@color/red"
+                android:textColor="@android:color/white"
+                android:padding="10dp"
+                android:minHeight="48dp"
+                android:layout_marginEnd="10dp"/>
+
+            <!-- Update Button -->
+            <Button
+                android:id="@+id/buttonUpdateOs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/buttonUpdate"
+                android:textColor="@android:color/white"
+                android:padding="10dp"
+                android:minHeight="48dp"
+                style="@style/ButtonPrimaryStyle"/>
+        </LinearLayout>
+
+        <!-- Location Button -->
+        <Button
+            android:id="@+id/buttonShowOs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonShowLocation"
+            android:backgroundTint="@color/green"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:minHeight="48dp"
+            android:layout_marginTop="16dp"
+            style="@style/ButtonPrimaryStyle"/>
+
+    </LinearLayout>
+</ScrollView>

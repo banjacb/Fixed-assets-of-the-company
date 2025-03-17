@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.projektnizadatak.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+    <action
+        android:id="@+id/home_to_addOS"
+        app:destination="@id/addOS" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.projektnizadatak.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery">
+
+    <action
+        android:id="@+id/gallery_to_addPerson"
+        app:destination="@id/addPerson" />
+        </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.projektnizadatak.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow">
+    <action
+        android:id="@+id/slideshow_to_addLocation"
+        app:destination="@id/addLocation" />
+        </fragment>
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.projektnizadatak.ui.setting.SettingFragment"
+        android:label="@string/menu_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/addPerson"
+        android:name="com.example.projektnizadatak.addFragments.AddPerson"
+        android:label="@string/frag_dodaj"
+        tools:layout="@layout/fragment_add_person" />
+    <fragment
+        android:id="@+id/addOS"
+        android:name="com.example.projektnizadatak.addFragments.AddOsnovnoSredstvo"
+        android:label="@string/frag_dodaj"
+        tools:layout="@layout/fragment_add_osnovno_sredstvo" />
+
+    <fragment
+        android:id="@+id/addLocation"
+        android:name="com.example.projektnizadatak.addFragments.AddLokacija"
+        android:label="@string/frag_dodaj"
+        tools:layout="@layout/fragment_add_lokacija" />
+    <fragment
+        android:id="@+id/nav_lists"
+        android:name="com.example.projektnizadatak.ui.lists.ListsFragment"
+        android:label="@string/lists"
+        tools:layout="@layout/fragment_lists">
+    <action
+        android:id="@+id/nav_lists_to_addOsLists"
+        app:destination="@id/addLists" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addLists"
+        android:name="com.example.projektnizadatak.addFragments.AddOsList"
+        android:label="@string/frag_dodaj"
+        tools:layout="@layout/fragment_add_os_list" />
+
+    
+
+
+</navigation>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addFragments.AddOsnovnoSredstvo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Barkod (Barcode) -->
+
+
+            <EditText
+                android:id="@+id/editTextBarkod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/labelBarcode"
+                android:paddingBottom="16dp"/>
+
+            <Button
+                android:id="@+id/buttonScan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonScan"
+                android:layout_marginTop="8dp"
+                style="@style/ButtonPrimaryStyle"/>
+
+            <!-- Naziv (Name) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelName"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/editTextNaziv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/labelName"
+                android:paddingBottom="16dp" />
+
+            <!-- Opis (Description) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelSubscribe"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/editTextOpis"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:hint="@string/labelSubscribe"
+                android:paddingBottom="16dp"/>
+
+            <!-- Cijena (Price) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelPrice"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/editTextCijena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="@string/labelPrice"
+                android:paddingBottom="16dp"/>
+
+            <!-- Datum (Date) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelDate"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/editTextDatum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:hint="@string/labelDate"
+                android:paddingBottom="16dp"/>
+
+            <!-- Osoba_id (Person ID) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/personId"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/editTextOsobaId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/personId"
+                android:paddingBottom="16dp"
+                />
+
+            <!-- Lokacija_id (Location ID) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/locationAddress"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/editTextLokacijaId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/locationAddress"
+                android:paddingBottom="16dp"
+                />
+
+            <!-- Slika (Image) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelPicture"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <ImageView
+                android:id="@+id/imageViewSlika"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="Slika"
+                android:scaleType="centerCrop"
+                android:background="#CCC" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/buttonSelectImage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/buttonSelect"
+                    android:layout_marginEnd="8dp"
+                    style="@style/ButtonPrimaryStyle"/>
+
+                <Button
+                    android:id="@+id/buttonCamera"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/buttonCamera"
+                    style="@style/ButtonPrimaryStyle"/>
+
+            </LinearLayout>
+
+            <!-- Add Button -->
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonSubmit"
+                android:layout_marginTop="16dp"
+                style="@style/ButtonPrimaryStyle"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

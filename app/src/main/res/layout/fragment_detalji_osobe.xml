@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/labelName"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/editTextImeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="8dp"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:hint="@string/labelName"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/labelSurname"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/editTextPrezimeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:hint="@string/labelSurname"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonDeletePerson"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/buttonDelete"
+            android:backgroundTint="@color/red"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:minHeight="48dp"
+            android:layout_marginEnd="10dp"/>
+
+
+        <Button
+            android:id="@+id/buttonUpdatePerson"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/buttonUpdate"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:minHeight="48dp"
+            style="@style/ButtonPrimaryStyle"/>
+    </LinearLayout>
+
+</LinearLayout>

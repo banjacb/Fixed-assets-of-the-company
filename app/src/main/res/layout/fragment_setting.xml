@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.setting.SettingFragment">
+
+    <TextView
+        android:id="@+id/select_language_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/labelLanguage"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/language_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/english"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radio_serbian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/serbian"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_save_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saveButton"
+        android:layout_marginTop="16dp"
+        style="@style/ButtonPrimaryStyle"/>
+
+</LinearLayout>

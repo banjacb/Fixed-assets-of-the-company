@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">ETF</string>
+    <string name="nav_header_subtitle">info@etf.unibl.org</string>
+    <string name="nav_header_subtitle2">Phone number: 051/221-820</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Fixed assets</string>
+    <string name="menu_gallery">Employees</string>
+    <string name="menu_slideshow">Locations</string>
+    <string name="menu_setting">Settings</string>
+    <string name="frag_dodaj">Add</string>
+    <string name="labelSubscribe">Description</string>
+    <string name="labelBarcode">Barcode</string>
+    <string name="buttonScan">Scan</string>
+    <string name="labelPrice">Price</string>
+    <string name="labelDate">Date</string>
+    <string name="labelPicture">Picture</string>
+    <string name="buttonSelect">Find</string>
+    <string name="buttonCamera">Take a picture</string>
+    <string name="personId">Id employees</string>
+
+    <string name="locationName">City</string>
+    <string name="locationAddress">Postal code</string>
+    <string name="buttonShowLocation">Available locations</string>
+    <string name="labelLanguage">Language</string>
+    <string name="english">English</string>
+    <string name="serbian">Serbian</string>
+    <string name="saveButton">Save</string>
+
+
+    <string name="filterName">Filter by name</string>
+    <string name="filterPrice">Filter by price</string>
+    <string name="filterNamePerson">Filter by name</string>
+    <string name="filterSurnamePerson">Filter by lastname</string>
+    <string name="filterBarcod">Filter by barcod</string>
+    <string name="buttonDelete">Delete</string>
+    <string name="buttonUpdate">Update</string>
+    <string name="labelName">Name</string>
+    <string name="labelSurname">Lastname</string>
+    <string name="buttonSubmit">Add</string>
+    <string name="lists">Lists</string>
+    <string name="currentPerson">Current person</string>
+    <string name="newPerson">New person</string>
+    <string name="currentLocation">Current location</string>
+    <string name="newLocation">New location</string>
+
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
+    <string name="osnovnaSredstva">Osnovna sredstva</string>
+    <string name="osoba">Zaposleni</string>
+    <string name="title_activity_maps1">MapsActivity</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+
+    <string name="toast_false">The database is empty!</string>
+    <string name="toast_true">Loaded!</string>
+    <string name="delete_true">Deleted!</string>
+    <string name="update_true">Updated!</string>
+    <string name="error">Cancelled!</string>
+    <string name="add_true">Added!</string>
+    <string name="search">Search!</string>
+    <string name="error_not_found">The data does not exist in the database..</string>
+    <string name="error_empty_fields">Please enter all information.</string>
+    <string name="error_osoba_not_found">The person with the entered ID does not exist.</string>
+    <string name="error_lokacija_not_found">The location with the entered ID does not exist.</string>
+</resources>

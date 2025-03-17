@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">ProjektniZadatak</string>
+    <string name="navigation_drawer_open">Otvorite navigacioni meni</string>
+    <string name="navigation_drawer_close">Zatvorite navigacioni meni</string>
+    <string name="nav_header_title">ETF</string>
+    <string name="nav_header_subtitle">info@etf.unibl.org</string>
+    <string name="nav_header_subtitle2">Telefon: 051/221-820</string>
+    <string name="nav_header_desc">Navigacioni heder</string>
+    <string name="action_settings">Podešavanja</string>
+    <string name="menu_home">Osnovna sredstva</string>
+    <string name="menu_gallery">Zaposleni</string>
+    <string name="menu_slideshow">Lokacije</string>
+    <string name="menu_setting">Podešavanja</string>
+    <string name="frag_dodaj">Dodaj</string>
+    <string name="labelSubscribe">Opis</string>
+    <string name="labelBarcode">Barkod</string>
+    <string name="buttonScan">Skeniraj</string>
+    <string name="labelPrice">Cijena</string>
+    <string name="labelDate">Datum</string>
+    <string name="labelPicture">Slika</string>
+    <string name="buttonSelect">Pronadji</string>
+    <string name="buttonCamera">Uslikaj</string>
+    <string name="personId">Id zaduženog</string>
+
+
+    <string name="locationName">Grad</string>
+    <string name="locationAddress">Poštanski broj</string>
+    <string name="buttonShowLocation">Dostupne lokacije</string>
+    <string name="labelLanguage">Jezik</string>
+    <string name="english">Engleski</string>
+    <string name="serbian">Srpski</string>
+    <string name="saveButton">Sačuvaj</string>
+
+
+    <string name="filterName">Filtriraj po nazivu</string>
+    <string name="filterPrice">Filtriraj po cijeni</string>
+    <string name="filterNamePerson">Filtriraj po imenu zaposlenog</string>
+    <string name="filterSurnamePerson">Filtriraj po prezimenu zaposlenog</string>
+    <string name="filterBarcod">Filtriraj po barkodu</string>
+    <string name="buttonDelete">Obriši</string>
+    <string name="buttonUpdate">Izmjeni</string>
+    <string name="labelName">Ime/Naziv</string>
+    <string name="labelSurname">Prezime</string>
+    <string name="buttonSubmit">Dodaj</string>
+    <string name="osnovnaSredstva">Osnovna sredstva</string>
+    <string name="osoba">Zaposleni</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="lists">Liste</string>
+    <string name="currentPerson">Trenutno zaduzena osoba</string>
+    <string name="newPerson">Nova osoba</string>
+    <string name="currentLocation">Trneunta lokacija</string>
+    <string name="newLocation">Nova lokacija</string>
+
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+
+    <string name="signature_title">Potpis</string>
+    <string name="reply_title">Difoltni</string>
+
+    <string name="sync_title">Sync email periodicallye</string>
+    <string name="attachment_title">Download incoming rrr attachments</string>
+    <string name="attachment_summary_on">Automatically rr download attachments for incoming emails</string>
+    <string name="attachment_summary_off">Only download  rr attachments when manually requested</string>
+
+    <string name="title_activity_maps1">MapsActivity1</string>
+
+
+    <string name="toast_false">Nema podataka u bazi!</string>
+    <string name="toast_true">Ucitano!</string>
+    <string name="delete_true">Obrisano!</string>
+    <string name="update_true">Izmjenjeno!</string>
+    <string name="error">Neuspjesno!</string>
+    <string name="add_true">Dodano!</string>
+    <string name="search">Odaberite</string>
+    <string name="error_not_found">Podaci ne postoje u bazi.</string>
+    <string name="error_empty_fields">Molimo unesite sve podatke.</string>
+    <string name="error_osoba_not_found">Osoba sa unijetim ID-jem ne postoji.</string>
+    <string name="error_lokacija_not_found">Lokacija sa unijetim ID-jem ne postoji.</string>
+
+
+
+</resources>

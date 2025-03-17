@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/labelName"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/naziv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/labelName"
+            android:inputType="text"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/currentPerson"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/trenutna_osoba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/currentPerson"
+            android:inputType="text"
+            android:minHeight="48dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newPerson"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/sledeca_osoba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/newPerson"
+            android:inputType="text"
+            android:minHeight="48dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/currentLocation"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/trenutna_lokacija"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/currentLocation"
+            android:inputType="text"
+            android:minHeight="48dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newLocation"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/sledeca_lokacija"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/newLocation"
+            android:inputType="text"
+            android:minHeight="48dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/labelBarcode"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/barkod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/labelBarcode"
+            android:inputType="text"
+            android:minHeight="48dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/scan_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/buttonScan"
+                style="@style/ButtonPrimaryStyle"/>
+
+            <Button
+                android:id="@+id/manual_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Manual"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/buttonSubmit" />
+</LinearLayout>
